@@ -395,7 +395,6 @@ header {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  background-color: transparent;
   border: 1px solid var(--color-white);
   border-radius: 4px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -753,7 +752,7 @@ body {
   fill: var(--color-iris);
 }
 .send {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -768,12 +767,17 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send:hover {
+  background-color: var(--color-ocean);
 }
 .input-label {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   display: block;
+  line-height: 1.17;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
@@ -806,6 +810,7 @@ body {
   background-color: transparent;
   transition: border-color var(--color-iris);
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment:focus {
   border-color: var(--color-iris);
@@ -818,6 +823,7 @@ body {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
+  line-height: 1.17;
 }
 .title-privacy {
   font-family: 'Roboto';
@@ -829,7 +835,7 @@ body {
   color: var(--color-iris);
 }
 .title-check {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   margin-right: 8px;
@@ -838,6 +844,8 @@ body {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-text {
   display: flex;
@@ -848,6 +856,7 @@ body {
   border: 1px solid var(--color-ocean);
   border-radius: 2px;
   fill: var(--color-cloud);
+  border: none;
 }
 .modal-check-box {
   margin-bottom: 24px;
