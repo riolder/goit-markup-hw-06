@@ -412,13 +412,6 @@ header {
   justify-content: space-between;
   gap: 24px;
 }
-.footer-input {
-  width: 264px;
-  height: 40px;
-}
-.footer-input {
-  background-color: var(--color-navy-blue);
-}
 .bt-subscribe:hover,
 .bt-subscribe:focus {
   background-color: var(--color-ocean);
@@ -779,7 +772,6 @@ body {
   display: block;
   line-height: 1.17;
   font-size: 12px;
-  line-height: 14px;
   letter-spacing: 0.04em;
 
   color: var(--color-light-slate);
@@ -847,10 +839,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.check-text {
-  display: flex;
-  align-items: center;
-}
+
 .modal-check:checked + .check-text .title-check {
   background: var(--color-ocean);
   border: 1px solid var(--color-ocean);
